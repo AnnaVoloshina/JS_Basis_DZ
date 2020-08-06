@@ -253,13 +253,13 @@ while (input !== 6) {
 }
 alert("Поздравляем! Вы дали правильный ответ.");
 
-let input = +prompt("Сколько будет 2 + 2 х 2 ?");
+input = +prompt("Сколько будет 2 + 2 х 2 ?");
 do {
   input = +prompt("Ответ неверный. Сколько будет 2 + 2 х 2 ?");
 } while (input !== 6);
 alert("Поздравляем! Вы дали правильный ответ.");
 
-let input = +prompt("Сколько будет 2 + 2 х 2 ?");
+input = +prompt("Сколько будет 2 + 2 х 2 ?");
 for (; input !== 6; ) {
   input = +prompt("Ответ неверный. Сколько будет 2 + 2 х 2 ?");
 }
@@ -267,4 +267,14 @@ alert("Поздравляем! Вы дали правильный ответ.");
 
 // Task. Functions
 
-function isAdult(age) {}
+let userAge = +prompt("Введите Ваш возраст"); // Унарный плюс можно не писать, так как операции сравнения преобразуют операнды к числовым значениям.
+
+function isAdult(userAge) {
+  if (userAge >= 18) {
+    alert(true);
+  } else {
+    alert(false);
+  }
+}
+
+isAdult(userAge);
